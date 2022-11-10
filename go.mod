@@ -1,4 +1,4 @@
-module github.com/deepmap/oapi-codegen
+module github.com/atlanhq/oapi-codegen
 
 require (
 	github.com/atlanhq/kin-openapi v0.2.0-beta
