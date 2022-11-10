@@ -20,7 +20,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/atlanhq/kin-openapi/openapi3"
 	"github.com/pkg/errors"
 )
 
@@ -65,7 +65,7 @@ func ToCamelCase(str string) string {
 		if unicode.IsUpper(v) {
 			n += string(v)
 		}
-			if unicode.IsDigit(v) {
+		if unicode.IsDigit(v) {
 			n += string(v)
 		}
 		if unicode.IsLower(v) {
@@ -76,7 +76,7 @@ func ToCamelCase(str string) string {
 			}
 		}
 
-		 if strings.ContainsRune(separators, v) {
+		if strings.ContainsRune(separators, v) {
 			capNext = true
 		} else {
 			capNext = false
@@ -216,14 +216,15 @@ func RefPathToGoType(refPath string) (string, error) {
 // This function converts a swagger style path URI with parameters to a
 // Echo compatible path URI. We need to replace all of Swagger parameters with
 // ":param". Valid input parameters are:
-//   {param}
-//   {param*}
-//   {.param}
-//   {.param*}
-//   {;param}
-//   {;param*}
-//   {?param}
-//   {?param*}
+//
+//	{param}
+//	{param*}
+//	{.param}
+//	{.param*}
+//	{;param}
+//	{;param*}
+//	{?param}
+//	{?param*}
 func SwaggerUriToEchoUri(uri string) string {
 	return pathParamRE.ReplaceAllString(uri, ":$1")
 }
@@ -231,14 +232,15 @@ func SwaggerUriToEchoUri(uri string) string {
 // This function converts a swagger style path URI with parameters to a
 // Chi compatible path URI. We need to replace all of Swagger parameters with
 // "{param}". Valid input parameters are:
-//   {param}
-//   {param*}
-//   {.param}
-//   {.param*}
-//   {;param}
-//   {;param*}
-//   {?param}
-//   {?param*}
+//
+//	{param}
+//	{param*}
+//	{.param}
+//	{.param*}
+//	{;param}
+//	{;param*}
+//	{?param}
+//	{?param*}
 func SwaggerUriToChiUri(uri string) string {
 	return pathParamRE.ReplaceAllString(uri, "{$1}")
 }

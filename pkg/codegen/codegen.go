@@ -24,7 +24,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/atlanhq/kin-openapi/openapi3"
 	"github.com/pkg/errors"
 
 	"github.com/deepmap/oapi-codegen/pkg/codegen/templates"
@@ -73,7 +73,7 @@ var (
 		{lookFor: "io\\.", packageName: "io"},
 		{lookFor: "ioutil\\.", packageName: "io/ioutil"},
 		{lookFor: "json\\.", packageName: "encoding/json"},
-		{lookFor: "openapi3\\.", packageName: "github.com/getkin/kin-openapi/openapi3"},
+		{lookFor: "openapi3\\.", packageName: "github.com/atlanhq/kin-openapi/openapi3"},
 		{lookFor: "openapi_types\\.", alias: "openapi_types", packageName: "github.com/deepmap/oapi-codegen/pkg/types"},
 		{lookFor: "path\\.", packageName: "path"},
 		{lookFor: "runtime\\.", packageName: "github.com/deepmap/oapi-codegen/pkg/runtime"},

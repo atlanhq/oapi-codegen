@@ -21,9 +21,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/atlanhq/kin-openapi/openapi3"
+	"github.com/atlanhq/kin-openapi/openapi3filter"
 	"github.com/deepmap/oapi-codegen/pkg/testutil"
-	"github.com/getkin/kin-openapi/openapi3"
-	"github.com/getkin/kin-openapi/openapi3filter"
 	"github.com/labstack/echo/v4"
 	echomiddleware "github.com/labstack/echo/v4/middleware"
 	"github.com/stretchr/testify/assert"

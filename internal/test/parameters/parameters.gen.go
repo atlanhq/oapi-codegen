@@ -11,7 +11,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/deepmap/oapi-codegen/pkg/runtime"
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/atlanhq/kin-openapi/openapi3"
 	"github.com/labstack/echo/v4"
 	"io/ioutil"
 	"net/http"

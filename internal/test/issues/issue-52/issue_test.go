@@ -3,7 +3,7 @@ package issue_52
 import (
 	"testing"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/atlanhq/kin-openapi/openapi3"
 	"github.com/stretchr/testify/require"
 
 	"github.com/deepmap/oapi-codegen/pkg/codegen"

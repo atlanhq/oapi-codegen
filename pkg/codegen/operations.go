@@ -21,7 +21,7 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/atlanhq/kin-openapi/openapi3"
 	"github.com/pkg/errors"
 )
 

@@ -1,6 +1,6 @@
 package codegen
 
-import "github.com/getkin/kin-openapi/openapi3"
+import "github.com/atlanhq/kin-openapi/openapi3"
 
 func filterOperationsByTag(swagger *openapi3.Swagger, opts Options) {
 	if len(opts.ExcludeTags) > 0 {
@@ -30,7 +30,7 @@ func includeOperationsWithTags(paths openapi3.Paths, tags []string, exclude bool
 	}
 }
 
-//operationHasTag returns true if the operation is tagged with any of tags
+// operationHasTag returns true if the operation is tagged with any of tags
 func operationHasTag(op *openapi3.Operation, tags []string) bool {
 	if op == nil {
 		return false

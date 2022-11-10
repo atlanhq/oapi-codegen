@@ -3,7 +3,7 @@ package codegen
 import (
 	"fmt"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/atlanhq/kin-openapi/openapi3"
 )
 
 func stringInSlice(a string, list []string) bool {

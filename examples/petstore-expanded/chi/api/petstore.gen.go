@@ -10,7 +10,7 @@ import (
 	"encoding/base64"
 	"fmt"
 	"github.com/deepmap/oapi-codegen/pkg/runtime"
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/atlanhq/kin-openapi/openapi3"
 	"github.com/go-chi/chi"
 	"net/http"
 	"strings"
