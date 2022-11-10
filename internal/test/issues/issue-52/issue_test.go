@@ -6,7 +6,7 @@ import (
 	"github.com/atlanhq/kin-openapi/openapi3"
 	"github.com/stretchr/testify/require"
 
-	"github.com/deepmap/oapi-codegen/pkg/codegen"
+	"github.com/atlanhq/oapi-codegen/pkg/codegen"
 )
 
 const spec = `
