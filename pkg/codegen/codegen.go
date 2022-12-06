@@ -73,7 +73,7 @@ var (
 		{lookFor: "io\\.", packageName: "io"},
 		{lookFor: "ioutil\\.", packageName: "io/ioutil"},
 		{lookFor: "json\\.", packageName: "encoding/json"},
-		{lookFor: "openapi3\\.", packageName: "github.com/getkin/kin-openapi/openapi3"},
+		{lookFor: "openapi3\\.", packageName: "github.com/atlanhq/kin-openapi/openapi3"},
 		{lookFor: "openapi_types\\.", alias: "openapi_types", packageName: "github.com/deepmap/oapi-codegen/pkg/types"},
 		{lookFor: "path\\.", packageName: "path"},
 		{lookFor: "runtime\\.", packageName: "github.com/deepmap/oapi-codegen/pkg/runtime"},
@@ -201,6 +201,8 @@ func Generate(swagger *openapi3.Swagger, packageName string, opts Options) (stri
 		return "", errors.Wrap(err, "error writing type definitions")
 
 	}
+
+	fmt.Println("Generationg")
 
 	if opts.GenerateClient {
 		_, err = w.WriteString(clientOut)
