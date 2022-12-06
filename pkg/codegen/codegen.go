@@ -27,7 +27,7 @@ import (
 	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/pkg/errors"
 
-	"github.com/deepmap/oapi-codegen/pkg/codegen/templates"
+	"github.com/atlanhq/oapi-codegen/pkg/codegen/templates"
 )
 
 // Options defines the optional code to generate.
@@ -74,9 +74,9 @@ var (
 		{lookFor: "ioutil\\.", packageName: "io/ioutil"},
 		{lookFor: "json\\.", packageName: "encoding/json"},
 		{lookFor: "openapi3\\.", packageName: "github.com/atlanhq/kin-openapi/openapi3"},
-		{lookFor: "openapi_types\\.", alias: "openapi_types", packageName: "github.com/deepmap/oapi-codegen/pkg/types"},
+		{lookFor: "openapi_types\\.", alias: "openapi_types", packageName: "github.com/atlanhq/oapi-codegen/pkg/types"},
 		{lookFor: "path\\.", packageName: "path"},
-		{lookFor: "runtime\\.", packageName: "github.com/deepmap/oapi-codegen/pkg/runtime"},
+		{lookFor: "runtime\\.", packageName: "github.com/atlanhq/oapi-codegen/pkg/runtime"},
 		{lookFor: "strings\\.", packageName: "strings"},
 		{lookFor: "time\\.Duration", packageName: "time"},
 		{lookFor: "time\\.Time", packageName: "time"},
